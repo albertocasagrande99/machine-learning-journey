@@ -1,0 +1,13 @@
+# 📚 03-natural-language-processing: Practical NLP Tutorials
+
+This folder collects practical, hands-on notebooks that teach core NLP building blocks — from text cleaning to modern Transformer architectures. Each notebook mixes intuition, runnable code, and small experiments. Many examples use lightweight demo datasets (or MNIST-equivalents for NLP) so you can run them on CPU, but Seq2Seq and Transformer examples will benefit from a GPU for realistic training times.
+
+## 🎯 Notebooks
+
+| \# | Notebook | Topic | Key concepts & highlights |
+| --- | --- | --- | --- |
+| 1 | `01-text-preprocessing.ipynb` | Text Preprocessing | Why preprocessing matters; tokenization (word, sentence, subword), normalization (lowercasing, punctuation/URL/HTML removal), stemming vs lemmatization (NLTK vs spaCy), stopword handling, and a configurable `TextPreprocessor` pipeline with practical strategies for sentiment analysis, topic modeling and NER. Includes install notes for `nltk` and `spaCy`. |
+| 2 | `02-word-embeddings.ipynb` | Word Embeddings | Fundamentals of dense word vectors: Word2Vec (CBOW, Skip-gram), GloVe (co-occurrence), and FastText (subword n-grams). Training and using embeddings with `gensim`, loading pre-trained GloVe, visualization (PCA / t-SNE), analogy tasks, and discussion of limitations (polysemy, bias, OOV). |
+| 3 | `03-sequence-to-sequence.ipynb` | Sequence-to-Sequence (Seq2Seq) Models | End-to-end Seq2Seq (Encoder–Decoder) tutorial for machine translation: text tokenization with `spaCy`, building vocabularies and DataLoaders, encoder/decoder (GRU) implementations, teacher forcing, training/evaluation loops, checkpointing, and inference (greedy decoding). Uses a small English–French parallel corpus as a demo. |
+| 4 | `04-attention-mechanism.ipynb` | Attention Mechanism (QKV & MHA) | Step-by-step implementation of scaled dot-product attention and Multi-Head Attention (MHA). Builds core components (scaled dot-product, split heads, positional feed-forward) and assembles a Transformer encoder block (Add & Norm, residuals). Great for understanding why attention replaced RNNs. |
+| 5 | `05-transformers.ipynb` | Full Transformer (Encoder–Decoder) | Builds a complete Transformer from scratch: positional encodings, Encoder stack, Decoder (masked self-attention + encoder-decoder attention), mask creation (padding & look-ahead), training loop on a parallel corpus, and auto-regressive inference. Discusses trade-offs and next steps (BERT / GPT / pretraining & fine-tuning). |
