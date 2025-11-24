@@ -2,7 +2,7 @@
 
 This folder collects hands-on notebooks that walk through core computer vision tasks: image classification, object detection, semantic segmentation, and modern Transformer-based vision models. Each notebook mixes intuition, runnable PyTorch code, and small experiments.
 
-## 🧭 Notebooks
+## 🎯 Notebooks
 
 | # | Notebook | Topic | Key concepts & highlights |
 | --- | --- | --- | --- |
